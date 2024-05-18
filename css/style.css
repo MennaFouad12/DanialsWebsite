@@ -1,0 +1,373 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+* {
+  scroll-behavior: smooth;
+}
+
+
+/* ---------------------------------our header---------------------------------- */
+
+.header1 {
+  position: relative;
+}
+.header1::after {
+  content: "";
+  position: absolute;
+
+  width: 150px;
+  height: 50px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  left: 50%;
+  transform: translateX(-40%);
+
+  z-index: -1;
+}
+.toglenav {
+  background-color: white !important;
+}
+.navbar a {
+  color: white;
+}
+
+.landing {
+  background-image: url(../imgs/bg.jpg);
+  background-size: cover;
+
+  background-position: center center;
+}
+.active1 {
+  border-bottom: 3px solid black;
+}
+
+.landing p::after {
+  content: "";
+
+  animation: typing 4s infinite;
+  -webkit-animation: typing 4s infinite;
+}
+@keyframes typing {
+  0% {
+    content: "|";
+  }
+  3% {
+    content: "D|";
+  }
+  5% {
+    content: "De|";
+  }
+  7% {
+    content: "Dev|";
+  }
+  10% {
+    content: "Deve|";
+  }
+  13% {
+    content: "Devel|";
+  }
+  15% {
+    content: "Develo|";
+  }
+  17% {
+    content: "Develop|";
+  }
+  20% {
+    content: "Developm|";
+  }
+  24% {
+    content: "Developme|";
+  }
+  25% {
+    content: "Developmen|";
+  }
+  27% {
+    content: "Development|";
+  }
+  30% {
+    content: "Development|";
+  }
+  32% {
+    content: "Developmen|";
+  }
+  35% {
+    content: "Developme|";
+  }
+  37% {
+    content: "Develop|";
+  }
+  40% {
+    content: "Develo|";
+  }
+  42% {
+    content: "Devel|";
+  }
+  45% {
+    content: "Deve|";
+  }
+  47% {
+    content: "Dev|";
+  }
+  50% {
+    content: "De|";
+  }
+  52% {
+    content: "Des|";
+  }
+  55% {
+    content: "Desi|";
+  }
+  57% {
+    content: "Desig|";
+  }
+  60% {
+    content: "Design|";
+  }
+  62% {
+    content: "Designe|";
+  }
+  65% {
+    content: "Designer|";
+  }
+  67% {
+    content: "Designer|";
+  }
+  70% {
+    content: "Designe|";
+  }
+  72% {
+    content: "Design|";
+  }
+  75% {
+    content: "Desig|";
+  }
+  77% {
+    content: "Desi|";
+  }
+  80% {
+    content: "Des|";
+  }
+  82% {
+    content: "De|";
+  }
+  85% {
+    content: "Dev|";
+  }
+  87% {
+    content: "Deve|";
+  }
+  90% {
+    content: "Devel|";
+  }
+  92% {
+    content: "Develo|";
+  }
+  95% {
+    content: "Develop|";
+  }
+  97% {
+    content: "Develope|";
+  }
+  100% {
+    content: "Developer|";
+  }
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.landing .icons span {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* ---------------------------------about style---------------------------------- */
+
+.about .progress {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 7px inset;
+}
+.about .img {
+  position: relative;
+  padding: 0 0 0 30px;
+}
+.about img {
+  width: 100%;
+}
+.about .img::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+
+  left: 0px;
+  bottom: -30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+.progress-bar {
+  width: 0;
+  transition: 0.3s;
+}
+
+.about .buttons button {
+  transition: 0.3s;
+}
+.about .buttons .btn1:hover {
+  background-color: white !important;
+  color: #343434 !important;
+}
+.about .buttons .btn2:hover {
+  background-color: black;
+  color: white;
+}
+/* ---------------------------------Services style---------------------------------- */
+
+.services,
+.test {
+  background-color: #f7f7f7;
+}
+.services .card {
+  background-color: #f7f7f7 !important;
+}
+.services .card .icon span,
+.contact span {
+  transition: 0.3s;
+}
+.services .card:hover .icon span,
+.contact .mycard:hover span {
+  background-color: black !important;
+
+  color: white;
+}
+/* ---------------------------------portofolio style---------------------------------- */
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  border: transparent !important;
+  margin: 0 12px;
+  --bs-nav-tabs-link-hover-border-color: white;
+}
+.nav-tabs .nav-link.active {
+  border: transparent !important;
+  border-radius: 0 !important;
+  border-bottom: 3px solid black !important;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.nav-tabs .nav-link {
+  color: black;
+  font-weight: 600;
+  border-radius: 0 !important;
+  outline: none;
+}
+.portfolio .items,
+.team .item {
+  transition: 0.4s;
+}
+
+.portfolio .items .layer {
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  color: black !important;
+
+  transition: all 0.4s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  z-index: 4;
+}
+.portfolio .items:hover .layer {
+  top: 0;
+}
+.portfolio .items::after {
+  content: "";
+  width: 95%;
+  height: 95%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.portfolio .items:hover::after {
+  opacity: 0.9;
+}
+/* ---------------------------------testmonials style---------------------------------- */
+
+.carousel-indicators button {
+  width: 15px !important ;
+  height: 15px !important;
+  border-radius: 50% !important;
+  text-indent: 0;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #869791;
+  height: 7px;
+  border-radius: 45%;
+  -webkit-border-radius: 45%;
+  -moz-border-radius: 45%;
+  -ms-border-radius: 45%;
+  -o-border-radius: 45%;
+}
+/* ---------------------------------teams style---------------------------------- */
+
+.team .item .layer1 {
+  width: 45%;
+  height: 45%;
+
+  left: 50%;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: 0.3s;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  opacity: 0;
+}
+.team .item:hover .layer1 {
+  opacity: 0.9;
+
+  transform: translate(-50%, -50%) rotateY(350deg);
+  width: 95%;
+  height: 95%;
+}
+.team .icon span,
+.team .icon span i {
+  transition: 0.3s;
+}
+.team .icon span:hover,
+.portfolio .icons span:hover{
+  background-color: white !important;
+  border: 1px solid black !important;
+  cursor: pointer;
+}
+.team .icon span:hover i,
+.portfolio .icons span:hover i {
+  color: black !important;
+}
+/* ---------------------------------contact style---------------------------------- */
+.contact button {
+  transition: 0.3s;
+}
+.contact button:hover {
+  background-color: white;
+  color: black;
+}
+.contact .form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+}
